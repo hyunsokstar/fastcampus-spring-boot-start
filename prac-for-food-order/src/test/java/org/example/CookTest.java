@@ -7,11 +7,11 @@ import static org.assertj.core.api.Assertions.assertThatCode;
 
 public class CookTest {
 
-    @DisplayName("요리를 생성 한다")
-    @Test
-    void createTest() {
-        assertThatCode
-                (() -> new Cook("만두", 5000))
-                .doesNotThrowAnyException();
+            @DisplayName("요리를 생성 한다")
+            @Test
+            void createTest() {
+                assertThatCode
+                        (() -> new Cook("만두", 5000))
+                        .doesNotThrowAnyException();
     }
 }
