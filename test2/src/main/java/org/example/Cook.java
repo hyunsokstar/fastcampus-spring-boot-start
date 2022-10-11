@@ -12,6 +12,11 @@ Cook {
         this.price = price;
     }
 
+    public Cook(MenuItem menuItem) {
+        this.name = menuItem.getName();
+        this.price = menuItem.getPrice();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
